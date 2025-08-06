@@ -37,11 +37,11 @@ export default function GlobalError({
               
               {/* Error Message */}
               <h1 className="text-2xl font-bold text-red-800 mb-4">
-                Kritischer Systemfehler
+                Critical System Error
               </h1>
               
               <p className="text-red-600 mb-6">
-                Es ist ein schwerwiegender Fehler aufgetreten. Die Anwendung kann momentan nicht geladen werden.
+                A critical error has occurred. The application cannot be loaded at this time.
               </p>
               
               {/* Action Buttons */}
@@ -50,24 +50,24 @@ export default function GlobalError({
                   onClick={() => reset()}
                   className="w-full bg-red-600 hover:bg-red-700 text-white font-medium py-3 px-6 rounded-lg transition-colors"
                 >
-                  🔄 Anwendung neu starten
+                  🔄 Restart Application
                 </button>
                 
                 <button
                   onClick={() => window.location.href = 'https://writingcoach-c1.com'}
                   className="w-full bg-gray-100 hover:bg-gray-200 text-gray-700 font-medium py-3 px-6 rounded-lg transition-colors"
                 >
-                  🌐 Hauptseite besuchen
+                  🌐 Visit Main Site
                 </button>
               </div>
               
               {/* Emergency Contact */}
               <div className="mt-6 p-4 bg-red-100 rounded-lg border border-red-300">
                 <h3 className="text-sm font-semibold text-red-800 mb-2">
-                  🆘 Notfall-Support
+                  🆘 Emergency Support
                 </h3>
                 <p className="text-xs text-red-700">
-                  Kritischer Fehler gemeldet. Unser Team arbeitet an der Lösung.
+                  Critical error reported. Our team is working on a solution.
                 </p>
                 <p className="text-xs text-red-700 mt-1">
                   Email: emergency@writingcoach-c1.com

@@ -75,11 +75,11 @@ function DefaultErrorFallback({ error, errorInfo }: { error?: Error; errorInfo?:
           
           {/* Error Message */}
           <h1 className="text-2xl font-bold text-gray-800 dark:text-white mb-4">
-            Etwas ist schiefgelaufen
+            Something went wrong
           </h1>
           
           <p className="text-gray-600 dark:text-gray-300 mb-6">
-            Entschuldigung! Es gab ein unerwartetes Problem. Bitte versuche es erneut oder kontaktiere den Support.
+            Sorry! There was an unexpected problem. Please try again or contact support.
           </p>
           
           {/* Action Buttons */}
@@ -88,14 +88,14 @@ function DefaultErrorFallback({ error, errorInfo }: { error?: Error; errorInfo?:
               onClick={() => window.location.reload()}
               className="w-full bg-blue-600 hover:bg-blue-700 text-white font-medium py-3 px-6 rounded-lg transition-colors"
             >
-              🔄 Seite neu laden
+              🔄 Reload Page
             </button>
             
             <button
               onClick={() => window.location.href = '/'}
               className="w-full bg-gray-100 hover:bg-gray-200 dark:bg-gray-700 dark:hover:bg-gray-600 text-gray-700 dark:text-gray-300 font-medium py-3 px-6 rounded-lg transition-colors"
             >
-              🏠 Zur Startseite
+              🏠 Go to Homepage
             </button>
           </div>
           
@@ -154,16 +154,16 @@ export function ChatErrorBoundary({ children }: { children: ReactNode }) {
         <div className="p-4 text-center">
           <div className="text-4xl mb-2">💬❌</div>
           <h3 className="font-semibold text-gray-800 dark:text-white mb-2">
-            Chat-Problem
+            Chat Problem
           </h3>
           <p className="text-sm text-gray-600 dark:text-gray-300 mb-4">
-            Der Chat konnte nicht geladen werden. Versuche es erneut.
+            The chat could not be loaded. Please try again.
           </p>
           <button 
             onClick={() => window.location.reload()}
             className="bg-blue-600 hover:bg-blue-700 text-white px-4 py-2 rounded-lg text-sm"
           >
-            🔄 Chat neu laden
+            🔄 Reload Chat
           </button>
         </div>
       }
@@ -188,23 +188,23 @@ export function EvaluationErrorBoundary({ children }: { children: ReactNode }) {
         <div className="p-6 text-center bg-red-50 dark:bg-red-900/20 border border-red-200 dark:border-red-800 rounded-lg">
           <div className="text-4xl mb-2">📝❌</div>
           <h3 className="font-semibold text-red-800 dark:text-red-200 mb-2">
-            Bewertungs-Fehler
+            Evaluation Error
           </h3>
           <p className="text-sm text-red-600 dark:text-red-300 mb-4">
-            Die Textbewertung konnte nicht durchgeführt werden. Versuche es erneut oder wende dich an den Support.
+            The text evaluation could not be performed. Please try again or contact support.
           </p>
           <div className="space-x-3">
             <button 
               onClick={() => window.location.reload()}
               className="bg-red-600 hover:bg-red-700 text-white px-4 py-2 rounded-lg text-sm"
             >
-              🔄 Erneut versuchen
+              🔄 Try Again
             </button>
             <button
               onClick={() => window.location.href = '/'}
               className="bg-gray-100 hover:bg-gray-200 text-gray-700 px-4 py-2 rounded-lg text-sm"
             >
-              🏠 Startseite
+              🏠 Homepage
             </button>
           </div>
         </div>
@@ -230,23 +230,23 @@ export function PaymentErrorBoundary({ children }: { children: ReactNode }) {
         <div className="p-6 text-center bg-yellow-50 dark:bg-yellow-900/20 border border-yellow-200 dark:border-yellow-800 rounded-lg">
           <div className="text-4xl mb-2">💳❌</div>
           <h3 className="font-semibold text-yellow-800 dark:text-yellow-200 mb-2">
-            Payment-Problem
+            Payment Problem
           </h3>
           <p className="text-sm text-yellow-600 dark:text-yellow-300 mb-4">
-            Es gab ein Problem mit der Zahlungsabwicklung. Deine Zahlung wurde NICHT belastet.
+            There was a problem with payment processing. Your payment was NOT charged.
           </p>
           <div className="space-x-3">
             <button 
               onClick={() => window.location.reload()}
               className="bg-yellow-600 hover:bg-yellow-700 text-white px-4 py-2 rounded-lg text-sm"
             >
-              🔄 Erneut versuchen
+              🔄 Try Again
             </button>
             <button
               onClick={() => window.location.href = '/support'}
               className="bg-gray-100 hover:bg-gray-200 text-gray-700 px-4 py-2 rounded-lg text-sm"
             >
-              🎧 Support kontaktieren
+              🎧 Contact Support
             </button>
           </div>
         </div>

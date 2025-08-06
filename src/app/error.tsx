@@ -35,11 +35,11 @@ export default function Error({
           
           {/* Error Message */}
           <h1 className="text-2xl font-bold text-gray-800 dark:text-white mb-4">
-            Anwendungsfehler
+            Application Error
           </h1>
           
           <p className="text-gray-600 dark:text-gray-300 mb-6">
-            Es ist ein Fehler in der Anwendung aufgetreten. Das WritingCoach Team wurde automatisch benachrichtigt.
+            An error occurred in the application. The WritingCoach team has been automatically notified.
           </p>
           
           {/* Action Buttons */}
@@ -48,24 +48,24 @@ export default function Error({
               onClick={() => reset()}
               className="w-full bg-blue-600 hover:bg-blue-700 text-white font-medium py-3 px-6 rounded-lg transition-colors"
             >
-              🔄 Erneut versuchen
+              🔄 Try Again
             </button>
             
             <button
               onClick={() => window.location.href = '/'}
               className="w-full bg-gray-100 hover:bg-gray-200 dark:bg-gray-700 dark:hover:bg-gray-600 text-gray-700 dark:text-gray-300 font-medium py-3 px-6 rounded-lg transition-colors"
             >
-              🏠 Zur Startseite
+              🏠 Go to Homepage
             </button>
           </div>
           
           {/* Support Information */}
           <div className="mt-6 p-4 bg-blue-50 dark:bg-blue-900/20 rounded-lg border border-blue-200 dark:border-blue-800">
             <h3 className="text-sm font-semibold text-blue-800 dark:text-blue-200 mb-2">
-              🎧 Brauchen Sie Hilfe?
+              🎧 Need Help?
             </h3>
             <p className="text-xs text-blue-600 dark:text-blue-300">
-              Wenn das Problem weiterhin besteht, kontaktieren Sie uns unter support@writingcoach-c1.com
+              If the problem persists, please contact us at support@writingcoach-c1.com
             </p>
           </div>
           

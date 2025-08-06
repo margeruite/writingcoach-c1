@@ -18,11 +18,11 @@ export default function NotFound() {
           </h1>
           
           <h2 className="text-xl font-semibold text-gray-700 dark:text-gray-300 mb-4">
-            Seite nicht gefunden
+            Page Not Found
           </h2>
           
           <p className="text-gray-600 dark:text-gray-400 mb-6">
-            Die gesuchte Seite existiert nicht oder wurde verschoben. Vielleicht hilft dir eine dieser Optionen:
+            The page you're looking for doesn't exist or has been moved. Perhaps one of these options will help:
           </p>
           
           {/* Navigation Options */}
@@ -31,35 +31,35 @@ export default function NotFound() {
               href="/"
               className="block w-full bg-blue-600 hover:bg-blue-700 text-white font-medium py-3 px-6 rounded-lg transition-colors"
             >
-              🏠 Zur Startseite
+              🏠 Go to Homepage
             </Link>
             
             <Link
               href="/chat"
               className="block w-full bg-green-600 hover:bg-green-700 text-white font-medium py-3 px-6 rounded-lg transition-colors"
             >
-              💬 Chat starten
+              💬 Start Chat
             </Link>
             
             <Link
               href="/help"
               className="block w-full bg-gray-100 hover:bg-gray-200 dark:bg-gray-700 dark:hover:bg-gray-600 text-gray-700 dark:text-gray-300 font-medium py-3 px-6 rounded-lg transition-colors"
             >
-              ❓ Hilfe & Support
+              ❓ Help & Support
             </Link>
           </div>
           
           {/* Popular Links */}
           <div className="border-t border-gray-200 dark:border-gray-700 pt-6">
             <h3 className="text-sm font-semibold text-gray-700 dark:text-gray-300 mb-3">
-              📝 Beliebte Bereiche
+              📝 Popular Areas
             </h3>
             <div className="grid grid-cols-2 gap-2 text-sm">
               <Link
                 href="/evaluate"
                 className="text-blue-600 hover:text-blue-800 dark:text-blue-400 dark:hover:text-blue-200"
               >
-                TestDaF Bewertung
+                TestDaF Evaluation
               </Link>
               <Link
                 href="/training"
@@ -71,13 +71,13 @@ export default function NotFound() {
                 href="/progress"
                 className="text-blue-600 hover:text-blue-800 dark:text-blue-400 dark:hover:text-blue-200"
               >
-                Fortschritt
+                Progress
               </Link>
               <Link
                 href="/pricing"
                 className="text-blue-600 hover:text-blue-800 dark:text-blue-400 dark:hover:text-blue-200"
               >
-                Preise
+                Pricing
               </Link>
             </div>
           </div>
@@ -85,7 +85,7 @@ export default function NotFound() {
           {/* Exam Types */}
           <div className="mt-6 p-4 bg-blue-50 dark:bg-blue-900/20 rounded-lg border border-blue-200 dark:border-blue-800">
             <h3 className="text-sm font-semibold text-blue-800 dark:text-blue-200 mb-2">
-              🎓 C1-Prüfungen
+              🎓 C1 Exams
             </h3>
             <div className="flex flex-wrap gap-2 text-xs">
               <span className="bg-blue-100 dark:bg-blue-800 text-blue-800 dark:text-blue-200 px-2 py-1 rounded">
@@ -105,7 +105,7 @@ export default function NotFound() {
           
           {/* Search Suggestion */}
           <div className="mt-4 text-xs text-gray-500 dark:text-gray-400">
-            💡 Tipp: Nutze die Suche oder den Chat, um schnell zu finden, was du brauchst!
+            💡 Tip: Use search or chat to quickly find what you need!
           </div>
         </div>
       </div>
