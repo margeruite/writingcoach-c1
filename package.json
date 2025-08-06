@@ -2,6 +2,9 @@
   "name": "writingcoach-c1",
   "version": "0.1.0",
   "private": true,
+  "description": "AI-powered C1 German writing coach for international students",
+  "author": "WritingCoach Team",
+  "keywords": ["german", "c1", "testdaf", "goethe", "telc", "dsh", "writing", "ai", "coach"],
   "scripts": {
     "dev": "next dev --turbopack",
     "build": "next build",
