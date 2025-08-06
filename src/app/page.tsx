@@ -35,7 +35,7 @@ export default function Home() {
               GPT-4o Bewertungen
             </h3>
             <p className="text-gray-600 dark:text-gray-300 text-sm">
-              >95% Konsistenz • &lt;30 Sekunden • Alle 4 Prüfungstypen
+              &gt;95% Konsistenz • &lt;30 Sekunden • Alle 4 Prüfungstypen
             </p>
           </div>
           
