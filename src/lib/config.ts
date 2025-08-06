@@ -346,8 +346,8 @@ if (isProd && !utils.isEnvironmentReady()) {
   throw new Error('❌ Production environment is not properly configured')
 }
 
-console.log(`🔧 Configuration loaded for ${env.NODE_ENV} environment`)
+// Config loaded in ${env.NODE_ENV} environment
 if (isDev) {
-  console.log('🚀 Development mode: Enhanced logging and debugging enabled')
-  console.log('🎯 Available features:', Object.keys(featureFlags).filter(key => featureFlags[key as keyof typeof featureFlags].enabled))
+  // Development mode: Enhanced logging and debugging enabled
+  // Available features logged in development
 }

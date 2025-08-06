@@ -158,7 +158,7 @@ export const config = {
  * Call this in your app startup to ensure all required vars are present
  */
 export function validateEnvironment() {
-  console.log('🔧 Validating environment variables...')
+  // Validating environment variables...
   
   const requiredForDev = ['DATABASE_URL', 'NEXTAUTH_SECRET', 'OPENAI_API_KEY']
   const missing = requiredForDev.filter(key => !process.env[key])
@@ -172,8 +172,8 @@ export function validateEnvironment() {
     throw new Error(`❌ Missing required production environment variables: ${missing.join(', ')}`)
   }
   
-  console.log('✅ Environment validation complete')
-  console.log(`🚀 Running in ${env.NODE_ENV} mode`)
+  // Environment validation complete
+  // Running in ${env.NODE_ENV} mode
   
   // Log enabled features
   const enabledFeatures = Object.entries(features)
@@ -181,6 +181,6 @@ export function validateEnvironment() {
     .map(([feature]) => feature)
   
   if (enabledFeatures.length > 0) {
-    console.log(`🎯 Enabled features: ${enabledFeatures.join(', ')}`)
+    // Enabled features logged
   }
 }

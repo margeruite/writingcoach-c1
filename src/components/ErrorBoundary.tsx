@@ -1,6 +1,7 @@
 'use client'
 
 import React, { Component, ReactNode } from 'react'
+
 import { isDev } from '@/lib/env'
 
 interface Props {
@@ -30,7 +31,7 @@ export class ErrorBoundary extends Component<Props, State> {
     return { hasError: true, error }
   }
 
-  componentDidCatch(error: Error, errorInfo: React.ErrorInfo) {
+  override componentDidCatch(error: Error, errorInfo: React.ErrorInfo) {
     // Log error details
     console.error('ErrorBoundary caught an error:', error, errorInfo)
     
@@ -46,7 +47,7 @@ export class ErrorBoundary extends Component<Props, State> {
     // }
   }
 
-  render() {
+  override render() {
     if (this.state.hasError) {
       // Custom fallback UI
       if (this.props.fallback) {
